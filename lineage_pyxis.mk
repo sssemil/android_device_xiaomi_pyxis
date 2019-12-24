@@ -11,23 +11,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_DEVICE := grus
-PRODUCT_NAME := lineage_grus
+PRODUCT_DEVICE := pyxis
+PRODUCT_NAME := lineage_pyxis
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 9 SE
+PRODUCT_MODEL := MI 9 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Platform security patch
 # NOTE: Only bump this with appropriate build fingerprint
-PLATFORM_SECURITY_PATCH := 2019-10-01
+PLATFORM_SECURITY_PATCH := 2019-11-01
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="grus-user 9 PKQ1.181121.001 V11.0.4.0.PFBMIXM release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="pyxis-user 10 QKQ1.190828.002 9.11.28 release-keys"
 
-BUILD_FINGERPRINT := "Xiaomi/grus/grus:9/PKQ1.181121.001/V11.0.4.0.PFBMIXM:user/release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="grus" \
-    TARGET_DEVICE="grus"
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := Xiaomi/pyxis/pyxis:10/QKQ1.190828.002/9.11.28:user/release-keys

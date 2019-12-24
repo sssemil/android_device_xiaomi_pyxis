@@ -71,4 +71,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Inherit from proprietary version
-$(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/pyxis/pyxis-vendor.mk)
