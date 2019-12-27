@@ -19,9 +19,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Platform security patch
-# NOTE: Only bump this with appropriate build fingerprint
-PLATFORM_SECURITY_PATCH := 2019-11-01
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-11-01
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="pyxis-user 10 QKQ1.190828.002 9.11.28 release-keys"
 

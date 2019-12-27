@@ -70,5 +70,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/pyxis
+
 # Inherit from proprietary version
 $(call inherit-product-if-exists, vendor/xiaomi/pyxis/pyxis-vendor.mk)
