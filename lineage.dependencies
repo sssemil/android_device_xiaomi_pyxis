@@ -1,6 +1,19 @@
 [
   {
-    "repository": "grus-dev/android_device_xiaomi_sdm710-common",
+    "repository": "xiaomi-sdm710/android_kernel_xiaomi_sdm710",
+    "target_path": "kernel/xiaomi/sdm710",
+    "revision": "kernel.lnx.4.9.r30-rel"
+  },
+  {
+    "repository": "xiaomi-sdm710/android_vendor_xiaomi_pyxis",
+    "target_path": "vendor/xiaomi/pyxis"
+  },
+  {
+    "repository": "xiaomi-sdm710/android_device_xiaomi_sdm710-common",
     "target_path": "device/xiaomi/sdm710-common"
+  },
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
   }
 ]
