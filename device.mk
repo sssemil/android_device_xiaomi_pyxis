@@ -62,8 +62,8 @@ PRODUCT_PACKAGES += \
     nqnfcse_access.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf
+    $(LOCAL_PATH)/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/libnfc-nxp.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nxp.conf
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
