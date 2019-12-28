@@ -33,10 +33,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from Xiaomi sdm710-common
 $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sdm710
@@ -68,6 +64,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nxp.conf
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/pyxis
