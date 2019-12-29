@@ -42,7 +42,7 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # SEPolicy
-# BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
