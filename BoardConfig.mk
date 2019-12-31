@@ -5,7 +5,7 @@
 #
 
 # Inherit from Xiaomi sdm710-common
-include device/xiaomi/sdm710-common/BoardConfigCommon.mk
+-include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/pyxis
 
@@ -40,10 +40,3 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
-# Verified Boot
-BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
-
-# Inherit from the proprietary version
-#-include vendor/xiaomi/pyxis/BoardConfigVendor.mk
